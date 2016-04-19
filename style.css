@@ -1,0 +1,124 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background-image: url("images/bg2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	padding: 150px 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	color: white;
+	font-size: 4em;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 0.8em;
+}
+
+.stats {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.stats__block {
+	float: left;
+	height: 300px;
+	width: 100%;
+}
+
+.stats__block h3{
+	text-align: center;
+}
+
+.stats__block--half {
+	width: 50%;
+}
+
+.stats__block--green {
+	background-color: rgba(127, 196, 197, 0.8);
+}
+
+.stats__block--purple {
+	background-color: rgba(83, 54, 68, 0.8);
+	/*background-color: rgba(92, 54, 68, 0.8);*/
+}
+
+.stats__block--red {
+	background-color: rgba(151, 87, 89, 0.8);
+}
+
+.filterBtn {
+	border: 2px solid white;
+	border-radius: 50em;
+	cursor: pointer;
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	padding: 5px 15px;
+}
+
+.filterBtn:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.filterBtn.active:hover {
+	background-color: rgba(255,255,255,0.8);
+	color: #444;
+}
+
+.filterBtn.active {
+	background-color: white;
+	color: #444;
+}
+
+.pie {
+	height: 200px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.chart {
+	height: 230px;
+	margin: 0 auto;
+	width: 500px;
+}
+
+
+.axis line,
+.axis path {
+  fill: transparent;
+  stroke: transparent;
+}
+.axis text {
+  font-size: 14px;
+  fill: white;
+}
+
+
+/*.bar {
+  fill-opacity: 0.5;
+}*/
+.bar.left {
+  fill: rgb(127, 196, 197);
+}
+.bar.right {
+  fill: rgb(83, 54, 68);
+}
